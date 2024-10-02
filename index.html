@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi | Home</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+    <header
+        class="relative bg-[url('images/banner.png')] bg-cover before:absolute before:w-full before:h-full before:bg-[url('images/banner_layer.png')] before:bg-cover">
+        <div class="relative container pt-5 z-10">
+            <div class="navbar rounded-full bg-[#012348] text-white justify-between">
+                <div class="px-2">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl mr-5"><img src="dist/images/logo.png" alt="logo" width="80"></a>
+                    <div class="hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li>
+                                <details>
+                                    <summary>Company</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Driver</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Rider</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="px-2">
+                    <a
+                        class="btn btn-ghost rounded-full bg-[#FF8E01] uppercase border-2 border-transparent hover:border-[#FF8E01]">Sign
+                        Up / Log In</a>
+                </div>
+            </div>
+            <div class="mb-24">
+                <h1 class="font-poppins w-1/2 text-7xl text-white py-20">Drive when you want, make what you need</h1>
+                <div class="flex">
+                    <a class="px-8 py-3 font-medium rounded-full bg-white border-2 border-transparent hover:bg-transparent hover:text-white hover:border-white text-lg transition-all duration-300 mr-5"
+                        href="#">Sign up to drive</a>
+                    <a class="px-10 py-3 font-medium rounded-full bg-transparent border-2 border-white hover:bg-transparent text-white hover:text-black hover:bg-white text-lg transition-all duration-300"
+                        href="#">Sign in</a>
+                </div>
+            </div>
+            <div class="pb-12 font-montserrat">
+                <div class="grid grid-cols-12 gap-4 bg-white p-2 rounded-3xl">
+                    <div class="col-span-3">
+                        <select class="select w-full max-w-xs focus:border-0 focus:outline-[#FF8E01]">
+                            <option selected>Country</option>
+                            <option>Australia</option>
+                            <option>Bangladesh</option>
+                            <option>Canada</option>
+                            <option>Denmark</option>
+                            <option>Egypt</option>
+                        </select>
+                    </div>
+                    <div class="col-span-3">
+                        <select class="select w-full max-w-xs focus:border-0 focus:outline-[#FF8E01]">
+                            <option selected>City</option>
+                            <option>Sydney</option>
+                            <option>Dhaka</option>
+                            <option>Ontarion</option>
+                            <option>Copenhegen</option>
+                            <option>Kayro</option>
+                        </select>
+                    </div>
+                    <div class="col-span-3">
+                        <select class="select w-full max-w-xs focus:border-0 focus:outline-[#FF8E01]">
+                            <option selected>Vehicle</option>
+                            <option>Sedan</option>
+                            <option>SUV</option>
+                            <option>Jeep</option>
+                        </select>
+                    </div>
+                    <div class="col-span-3">
+                        <button
+                            class="group flex justify-between w-full h-full bg-[#F7F7F7] rounded-full hover:text-secondary transition-all duration-300">
+                            <span class="my-auto px-5">Join Now</span>
+                            <span
+                                class="h-full flex justify-center items-center bg-white rounded-2xl px-8 drop-shadow-lg transition-all duration-300 group-hover:bg-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="size-6 text-secondary group-hover:text-white transition-all duration-300">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-light py-40">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-6">
+                    <h2 class="w-2/3 font-semibold text-4xl">Driving and delivery requirements</h2>
+                    <p class="w-2/3 py-10 mb-10">To sign up, you need to have access to an eligible car,
+                        meet age requirements and provide all the necessary
+                        documents. Requirements vary by city according to
+                        local laws and regulations.</p>
+                    <div class="flex">
+                        <a class="px-5 py-3 font-medium rounded-full bg-secondary border-2 border-transparent hover:bg-transparent text-white hover:text-secondary hover:border-secondary text-md transition-all duration-300 mr-5"
+                            href="#">See requirements for driving</a>
+                        <a class="px-10 py-3 font-medium rounded-full bg-transparent border-2 border-secondary text-secondary hover:bg-transparent hover:text-white hover:bg-secondary text-md transition-all duration-300"
+                            href="#">See requirements for delivery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-10">
+                <div class="col-span-12">
+                    <h2 class="font-semibold text-4xl">Safety on the road</h2>
+                    <p class="py-10 mb-10">Have peace of mind wherever you go.</p>
+                </div>
+                <div class="col-span-4">
+                    <div class="text-secondary mb-3">
+                        <img src="/dist/icon/shield-icon.png" alt="icon" width="30">
+                    </div>
+                    <h3 class="text-xl mb-6">Safety features</h3>
+                    <p>
+                        Tell your loved ones where you are. Keep your
+                        contact details confidential. Get help at the tap
+                        of a button.
+                    </p>
+                </div>
+                <div class="col-span-4">
+                    <div class="text-secondary mb-3">
+                        <img src="/dist/icon/message-icon.png" alt="icon" width="30">
+                    </div>
+                    <h3 class="text-xl mb-6">Help if you need it</h3>
+                    <p>
+                        From emergency assistance to 24/7 support,
+                        the app is designed with your safety in mind.
+                    </p>
+                </div>
+                <div class="col-span-4">
+                    <div class="text-secondary mb-3">
+                        <img src="/dist/icon/teamwork-icon.png" alt="icon" width="30">
+                    </div>
+                    <h3 class="text-xl mb-6">An inclusive community</h3>
+                    <p>
+                        We're a community of millions of people who
+                        share community guidelines and depend on one
+                        another to do the right thing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container">
+            <div class="flex justify-center">
+                <h2 class="text-3xl font-semibold mb-5">Frequently asked questions</h2>
+            </div>
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12">
+                    <div class="collapse collapse-arrow shadow-lg mb-5">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">Lorem ipsum dolor sit amet?</div>
+                        <div class="collapse-content w-1/2">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam,
+                                eaque ipsa quae ab illo inventore veritatis et quasi architect
+                                beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow shadow-lg mb-5">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">Lorem ipsum dolor sit amet?</div>
+                        <div class="collapse-content w-1/2">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam,
+                                eaque ipsa quae ab illo inventore veritatis et quasi architect
+                                beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow shadow-lg mb-5">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title text-xl font-medium">Lorem ipsum dolor sit amet?</div>
+                        <div class="collapse-content w-1/2">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam,
+                                eaque ipsa quae ab illo inventore veritatis et quasi architect
+                                beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
