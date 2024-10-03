@@ -13,11 +13,11 @@
     <header
         class="relative bg-[url('images/banner.png')] bg-cover before:absolute before:w-full before:h-full before:bg-[url('images/banner_layer.png')] before:bg-cover">
         <div class="relative container pt-5 z-10">
-            <div class="navbar rounded-full bg-[#012348] text-white justify-between">
+            <div class="navbar rounded-full bg-[#012348] justify-between">
                 <div class="px-2">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
@@ -25,15 +25,33 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
                             <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
+                                <details>
+                                    <summary class="text-white">Company</summary>
+                                    <ul class="p-2 rounded-0 text-black">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
                             </li>
-                            <li><a>Item 3</a></li>
+                            <li>
+                                <details>
+                                    <summary class="text-white">Driver</summary>
+                                    <ul class="p-2 rounded-0 text-black">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary class="text-white">Rider</summary>
+                                    <ul class="p-2 rounded-0 text-black">
+                                        <li><a>Submenu</a></li>
+                                        <li><a>Submenu</a></li>
+                                    </ul>
+                                </details>
+                            </li>
                         </ul>
                     </div>
                     <a class="btn btn-ghost text-xl mr-5"><img src="dist/images/logo.png" alt="logo" width="80"></a>
@@ -41,8 +59,19 @@
                         <ul class="menu menu-horizontal px-1">
                             <li>
                                 <details>
-                                    <summary>Company</summary>
-                                    <ul class="p-2">
+                                    <summary class="text-white">Company</summary>
+                                    <ul class="p-1 rounded-0 text-black">
+                                        <li class="border-b-1"><a>Our Products</a></li>
+                                        <li><a>About Us</a></li>
+                                        <li><a>Careers</a></li>
+                                        <li><a>Cities</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary class="text-white">Driver</summary>
+                                    <ul class="p-2 rounded-0 text-black">
                                         <li><a>Submenu 1</a></li>
                                         <li><a>Submenu 2</a></li>
                                     </ul>
@@ -50,17 +79,8 @@
                             </li>
                             <li>
                                 <details>
-                                    <summary>Driver</summary>
-                                    <ul class="p-2">
-                                        <li><a>Submenu 1</a></li>
-                                        <li><a>Submenu 2</a></li>
-                                    </ul>
-                                </details>
-                            </li>
-                            <li>
-                                <details>
-                                    <summary>Rider</summary>
-                                    <ul class="p-2">
+                                    <summary class="text-white">Rider</summary>
+                                    <ul class="p-2 rounded-0 text-black">
                                         <li><a>Submenu 1</a></li>
                                         <li><a>Submenu 2</a></li>
                                     </ul>
@@ -76,7 +96,7 @@
                 </div>
             </div>
             <div class="mb-24">
-                <h1 class="font-poppins w-1/2 text-7xl text-white py-20">Drive when you want, make what you need</h1>
+                <h1 class="font-poppins md:w-1/2 text-4xl md:text-7xl text-white py-20">Drive when you want, make what you need</h1>
                 <div class="flex">
                     <a class="px-8 py-3 font-medium rounded-full bg-white border-2 border-transparent hover:bg-transparent hover:text-white hover:border-white text-lg transition-all duration-300 mr-5"
                         href="#">Sign up to drive</a>
@@ -85,9 +105,9 @@
                 </div>
             </div>
             <div class="pb-12 font-montserrat">
-                <div class="grid grid-cols-12 gap-4 bg-white p-2 rounded-3xl">
-                    <div class="col-span-3">
-                        <select class="select w-full max-w-xs focus:border-0 focus:outline-[#FF8E01]">
+                <div class="grid grid-cols-12 gap-4 bg-white p-4 md:p-2 rounded-3xl">
+                    <div class="col-span-12 md:col-span-3">
+                        <select class="select w-full rounded-full bg-light focus:border-0 focus:outline-[#FF8E01]">
                             <option selected>Country</option>
                             <option>Australia</option>
                             <option>Bangladesh</option>
@@ -96,8 +116,8 @@
                             <option>Egypt</option>
                         </select>
                     </div>
-                    <div class="col-span-3">
-                        <select class="select w-full max-w-xs focus:border-0 focus:outline-[#FF8E01]">
+                    <div class="col-span-12 md:col-span-3">
+                        <select class="select w-full rounded-full bg-light focus:border-0 focus:outline-[#FF8E01]">
                             <option selected>City</option>
                             <option>Sydney</option>
                             <option>Dhaka</option>
@@ -106,20 +126,20 @@
                             <option>Kayro</option>
                         </select>
                     </div>
-                    <div class="col-span-3">
-                        <select class="select w-full max-w-xs focus:border-0 focus:outline-[#FF8E01]">
+                    <div class="col-span-12 md:col-span-3">
+                        <select class="select w-full rounded-full bg-light focus:border-0 focus:outline-[#FF8E01]">
                             <option selected>Vehicle</option>
                             <option>Sedan</option>
                             <option>SUV</option>
                             <option>Jeep</option>
                         </select>
                     </div>
-                    <div class="col-span-3">
+                    <div class="col-span-12 md:col-span-3">
                         <button
-                            class="group flex justify-between w-full h-full bg-[#F7F7F7] rounded-full hover:text-secondary transition-all duration-300">
+                            class="group flex justify-between w-full md:h-full bg-[#F7F7F7] rounded-full hover:text-secondary transition-all duration-300">
                             <span class="my-auto px-5">Join Now</span>
                             <span
-                                class="h-full flex justify-center items-center bg-white rounded-2xl px-8 drop-shadow-lg transition-all duration-300 group-hover:bg-secondary">
+                                class="h-full flex justify-center items-center bg-white rounded-2xl py-3 md:py-0 px-8 drop-shadow-lg transition-all duration-300 group-hover:bg-secondary">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor"
                                     class="size-6 text-secondary group-hover:text-white transition-all duration-300">
@@ -134,19 +154,19 @@
         </div>
     </header>
 
-    <section class="bg-light py-40">
+    <section class="bg-light py-24 md:py-40">
         <div class="container">
             <div class="grid grid-cols-12 gap-4">
-                <div class="col-span-6">
-                    <h2 class="w-2/3 font-semibold text-4xl">Driving and delivery requirements</h2>
-                    <p class="w-2/3 py-10 mb-10">To sign up, you need to have access to an eligible car,
+                <div class="col-span-12 md:col-span-6">
+                    <h2 class="md:w-2/3 font-semibold text-4xl">Driving and delivery requirements</h2>
+                    <p class="md:w-2/3 py-10 mb-10">To sign up, you need to have access to an eligible car,
                         meet age requirements and provide all the necessary
                         documents. Requirements vary by city according to
                         local laws and regulations.</p>
-                    <div class="flex">
-                        <a class="px-5 py-3 font-medium rounded-full bg-secondary border-2 border-transparent hover:bg-transparent text-white hover:text-secondary hover:border-secondary text-md transition-all duration-300 mr-5"
+                    <div class="flex flex-col md:flex-row md:items-center">
+                        <a class="md:px-5 py-3 font-semibold rounded-full bg-secondary border-2 border-transparent hover:bg-transparent text-white hover:text-secondary hover:border-secondary text-md transition-all duration-300 md:mr-5 text-center md:text-left mb-4"
                             href="#">See requirements for driving</a>
-                        <a class="px-10 py-3 font-medium rounded-full bg-transparent border-2 border-secondary text-secondary hover:bg-transparent hover:text-white hover:bg-secondary text-md transition-all duration-300"
+                        <a class="md:px-10 py-3 font-semibold rounded-full border-2 border-secondary text-secondary hover:text-white hover:bg-secondary text-md transition-all duration-300 text-center md:text-left"
                             href="#">See requirements for delivery</a>
                     </div>
                 </div>
@@ -156,38 +176,38 @@
 
     <section class="py-20">
         <div class="container">
-            <div class="grid grid-cols-12 gap-10">
+            <div class="grid grid-cols-12 gap-4 md:gap-10">
                 <div class="col-span-12">
-                    <h2 class="font-semibold text-4xl">Safety on the road</h2>
-                    <p class="py-10 mb-10">Have peace of mind wherever you go.</p>
+                    <h2 class="font-semibold text-4xl text-center md:text-left">Safety on the road</h2>
+                    <p class="py-5 mb-5 md:py-10 md:mb-10 text-center md:text-left">Have peace of mind wherever you go.</p>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-12 md:col-span-4 mb-10 md:mb-0">
                     <div class="text-secondary mb-3">
-                        <img src="./dist/icon/shield-icon.png" alt="icon" width="26">
+                        <img class="mx-auto md:mx-0" src="./dist/icon/shield-icon.png" alt="icon" width="26">
                     </div>
-                    <h3 class="text-xl mb-6">Safety features</h3>
-                    <p>
+                    <h3 class="text-xl mb-6 text-center md:text-left">Safety features</h3>
+                    <p class="text-center md:text-left">
                         Tell your loved ones where you are. Keep your
                         contact details confidential. Get help at the tap
                         of a button.
                     </p>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-12 md:col-span-4 mb-10 md:mb-0">
                     <div class="text-secondary mb-3">
-                        <img src="./dist/icon/message-icon.png" alt="icon" width="30">
+                        <img class="mx-auto md:mx-0" src="./dist/icon/message-icon.png" alt="icon" width="30">
                     </div>
-                    <h3 class="text-xl mb-6">Help if you need it</h3>
-                    <p>
+                    <h3 class="text-xl mb-6 text-center md:text-left">Help if you need it</h3>
+                    <p class="text-center md:text-left">
                         From emergency assistance to 24/7 support,
                         the app is designed with your safety in mind.
                     </p>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-12 md:col-span-4">
                     <div class="text-secondary mb-3">
-                        <img src="./dist/icon/teamwork-icon.png" alt="icon" width="30">
+                        <img class="mx-auto md:mx-0" src="./dist/icon/teamwork-icon.png" alt="icon" width="30">
                     </div>
-                    <h3 class="text-xl mb-6">An inclusive community</h3>
-                    <p>
+                    <h3 class="text-xl mb-6 text-center md:text-left">An inclusive community</h3>
+                    <p class="text-center md:text-left">
                         We're a community of millions of people who
                         share community guidelines and depend on one
                         another to do the right thing.
@@ -199,19 +219,19 @@
 
     <section class="py-20">
         <div class="container">
-            <div class="grid grid-cols-12 gap-10">
+            <div class="grid grid-cols-12 gap-4 md:gap-10">
                 <div class="col-span-12">
                     <h2 class="font-semibold text-4xl mb-16">Earning</h2>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-12 md:col-span-4">
                     <div class="mx-auto bg-light w-2/3 aspect-square rounded-full"></div>
                     <p class="text-center text-2xl font-semibold py-5">Name</p>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-12 md:col-span-4">
                     <div class="mx-auto bg-light w-2/3 aspect-square rounded-full"></div>
                     <p class="text-center text-2xl font-semibold py-5">Name</p>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-12 md:col-span-4">
                     <div class="mx-auto bg-light w-2/3 aspect-square rounded-full"></div>
                     <p class="text-center text-2xl font-semibold py-5">Name</p>
                 </div>
@@ -287,7 +307,82 @@
                 </div>
 
                 <!-- Navigation Buttons -->
-                <div class="flex justify-center items-center py-5">
+                <div class="flex justify-center items-center py-8">
+                    <div class="button-prev p-3 rounded-full bg-light">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </div>
+                    <div class="pagination w-auto px-2"></div>
+                    <div class="button-next p-3 rounded-full bg-light">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container">
+            <div class="flex justify-center">
+                <h2 class="text-3xl font-semibold mb-10">Airports</h2>
+            </div>
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                                <img src="./dist/images/city.png" alt="cities" class="rounded-xl w-full" />
+                            </figure>
+                            <div class="card-body items-center text-center mt-10">
+                                <h4 class="card-title">Turkey</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                                <img src="./dist/images/city.png" alt="cities" class="rounded-xl w-full" />
+                            </figure>
+                            <div class="card-body items-center text-center mt-10">
+                                <h4 class="card-title">Egypt</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                                <img src="./dist/images/city.png" alt="cities" class="rounded-xl w-full" />
+                            </figure>
+                            <div class="card-body items-center text-center mt-10">
+                                <h4 class="card-title">Canada</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                                <img src="./dist/images/city.png" alt="cities" class="rounded-xl w-full" />
+                            </figure>
+                            <div class="card-body items-center text-center mt-10">
+                                <h4 class="card-title">Australia</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="flex justify-center items-center py-8">
                     <div class="button-prev p-3 rounded-full bg-light">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
@@ -316,7 +411,7 @@
                     <div class="collapse collapse-arrow shadow-lg mb-5">
                         <input type="radio" name="my-accordion-2" checked="checked" />
                         <div class="collapse-title text-xl font-medium">Lorem ipsum dolor sit amet?</div>
-                        <div class="collapse-content w-1/2">
+                        <div class="collapse-content md:w-1/2">
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                                 accusantium doloremque laudantium, totam rem aperiam,
                                 eaque ipsa quae ab illo inventore veritatis et quasi architect
@@ -326,7 +421,7 @@
                     <div class="collapse collapse-arrow shadow-lg mb-5">
                         <input type="radio" name="my-accordion-2" />
                         <div class="collapse-title text-xl font-medium">Lorem ipsum dolor sit amet?</div>
-                        <div class="collapse-content w-1/2">
+                        <div class="collapse-content md:w-1/2">
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                                 accusantium doloremque laudantium, totam rem aperiam,
                                 eaque ipsa quae ab illo inventore veritatis et quasi architect
@@ -336,7 +431,7 @@
                     <div class="collapse collapse-arrow shadow-lg mb-5">
                         <input type="radio" name="my-accordion-2" />
                         <div class="collapse-title text-xl font-medium">Lorem ipsum dolor sit amet?</div>
-                        <div class="collapse-content w-1/2">
+                        <div class="collapse-content md:w-1/2">
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                                 accusantium doloremque laudantium, totam rem aperiam,
                                 eaque ipsa quae ab illo inventore veritatis et quasi architect
@@ -348,6 +443,114 @@
         </div>
     </section>
 
+    <footer class="footer bg-black text-white p-10">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-12 mb-10 w-full">
+                <img class="mx-auto md:mx-0" src="./dist/images/logo.png" alt="Logo">
+            </div>
+            <div class="col-span-12 md:col-span-4">
+                <p class="md:w-2/3 text-xl text-center md:text-left">
+                    Never travel empty
+                    Drive and earn when
+                    you want.
+                </p>
+                <ul class="flex items-center mt-10 justify-center md:justify-start md:mt-20">
+                    <li class="mr-5">
+                        <a href="#">
+                            <svg width="13" height="26" viewBox="0 0 13 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.50961 13.4099V25.3794C3.50961 25.5512 3.64934 25.6909 3.82171 25.6909H8.26621C8.43793 25.6909 8.57764 25.5512 8.57764 25.3794V13.2146H11.8005C11.9624 13.2146 12.0969 13.0912 12.1113 12.9293L12.4208 9.26438C12.4358 9.08287 12.2928 8.92616 12.11 8.92616H8.57764V6.32618C8.57764 5.71635 9.07192 5.22272 9.68111 5.22272H12.1648C12.3372 5.22272 12.4763 5.08299 12.4763 4.91062V1.2457C12.4763 1.07333 12.3372 0.933594 12.1648 0.933594H7.96847C5.50562 0.933594 3.50961 2.93027 3.50961 5.39248V8.92616H1.28703C1.11531 8.92616 0.975586 9.0659 0.975586 9.23826V12.9032C0.975586 13.0756 1.11531 13.2146 1.28703 13.2146H3.50961V13.4099Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mr-5">
+                        <a href="#">
+                            <svg width="27" height="19" viewBox="0 0 27 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M26.46 6.08487C26.46 2.92929 23.9012 0.371094 20.7456 0.371094H6.03769C2.88208 0.371094 0.323242 2.92929 0.323242 6.08487V12.5391C0.323242 15.6954 2.88208 18.2536 6.03769 18.2536H20.7456C23.9012 18.2536 26.46 15.6954 26.46 12.5391V6.08487ZM18.3722 9.48209L11.7946 12.7239C11.538 12.863 10.6402 12.6769 10.6402 12.3851V5.73035C10.6402 5.43457 11.5452 5.24844 11.8024 5.39539L18.0869 8.80762C18.35 8.95779 18.6386 9.3378 18.3722 9.48209Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mr-5">
+                        <a href="#">
+                            <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.5423 3.43501C24.7431 3.79741 23.8355 4.01678 22.973 4.16172C23.3824 4.09253 23.972 3.35145 24.2129 3.05175C24.5812 2.59404 24.8809 2.07301 25.0526 1.51017C25.0748 1.46641 25.0878 1.41093 25.0441 1.37762C24.9886 1.35542 24.9514 1.36717 24.9076 1.38871C23.9446 1.90519 22.9482 2.27932 21.8878 2.54441C21.7997 2.56662 21.7344 2.54441 21.6789 2.48892C21.5914 2.39033 21.5085 2.29629 21.4151 2.21925C20.9698 1.8399 20.4912 1.54281 19.9525 1.32344C19.2448 1.03483 18.4717 0.912732 17.7097 0.961697C16.968 1.01002 16.24 1.21896 15.5812 1.56305C14.9217 1.9078 14.3334 2.38705 13.8646 2.9649C13.3801 3.56366 13.0224 4.27012 12.8395 5.01838C12.6626 5.74118 12.6769 6.45614 12.7853 7.18676C12.8017 7.30757 12.7906 7.32455 12.6809 7.30757C8.53475 6.69055 5.09709 5.20709 2.3071 2.02729C2.18633 1.88887 2.12038 1.88887 2.02048 2.03773C0.800157 3.86792 1.39237 6.80873 2.91762 8.25367C3.12065 8.44627 3.32961 8.6389 3.55487 8.81453C3.4726 8.83151 2.45795 8.72116 1.55299 8.25367C1.43219 8.17662 1.37146 8.22102 1.36037 8.35814C1.34927 8.55597 1.36623 8.73748 1.39366 8.95231C1.62807 10.8079 2.91304 12.5238 4.67203 13.1931C4.88097 13.2812 5.11209 13.3583 5.33736 13.3962C4.93645 13.4843 4.5238 13.547 3.37399 13.4575C3.231 13.4295 3.17616 13.5013 3.231 13.6384C4.09483 15.9935 5.9596 16.6941 7.35623 17.0931C7.54295 17.1257 7.73035 17.1257 7.91774 17.1695C7.90598 17.1865 7.8949 17.1865 7.88443 17.2028C7.42087 17.9093 5.81531 18.4349 5.06705 18.696C3.707 19.1714 2.22614 19.3855 0.788392 19.2438C0.558564 19.2099 0.510255 19.2125 0.447556 19.2438C0.384233 19.2824 0.439729 19.3372 0.513505 19.3973C0.805375 19.5899 1.10246 19.7603 1.40476 19.9262C2.31755 20.4093 3.26953 20.7946 4.2646 21.0695C9.40512 22.4889 15.1946 21.4462 19.0541 17.6115C22.0844 14.6002 23.1467 10.4482 23.1467 6.28965C23.1467 6.12706 23.3393 6.03697 23.4536 5.95141C24.2423 5.3592 24.924 4.65013 25.5123 3.85812C25.6448 3.68052 25.6925 3.52252 25.6925 3.45721V3.43501C25.6925 3.36908 25.6448 3.38865 25.5423 3.43501Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mr-5">
+                        <a href="#">
+                            <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.815521 8.03662H5.49573V23.0704H0.815521V8.03662ZM3.1563 0.566406C4.6528 0.566406 5.8653 1.78088 5.8653 3.27414C5.8653 4.76929 4.6528 5.98575 3.1563 5.98575C1.65585 5.98575 0.443359 4.76929 0.443359 3.27414C0.443359 1.78088 1.65585 0.566406 3.1563 0.566406ZM8.42804 23.0704H13.0984V15.6342C13.0984 13.6741 13.4687 11.7753 15.9015 11.7753C18.2964 11.7753 18.3304 14.0168 18.3304 15.7615V23.0704H22.9995V14.8251C22.9995 10.7763 22.1278 7.66513 17.396 7.66513C15.1206 7.66513 13.596 8.91022 12.9711 10.0934H12.9104V8.03662H8.42804V23.0704Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mr-5">
+                        <a href="#">
+                            <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.5396 6.5649C21.5396 7.37454 20.8834 8.03074 20.0743 8.03074C19.2647 8.03074 18.6086 7.37454 18.6086 6.5649C18.6086 5.75526 19.2647 5.09907 20.0743 5.09907C20.8834 5.09907 21.5396 5.75526 21.5396 6.5649ZM19.7147 13.1347C19.7147 16.5293 16.9534 19.2912 13.5588 19.2912C10.1642 19.2912 7.40228 16.5293 7.40228 13.1347C7.40228 9.74078 10.1642 6.97886 13.5588 6.97886C16.9534 6.97886 19.7147 9.74078 19.7147 13.1347ZM17.5024 13.1347C17.5024 10.9605 15.733 9.19166 13.5588 9.19166C11.3839 9.19166 9.61511 10.9605 9.61511 13.1347C9.61511 15.3096 11.3839 17.0785 13.5588 17.0785C15.733 17.0785 17.5024 15.3096 17.5024 13.1347ZM26.0193 8.1894C26.0193 4.04262 22.6567 0.680664 18.5099 0.680664H8.26355C4.11676 0.680664 0.754883 4.04262 0.754883 8.1894V18.4366C0.754883 22.5833 4.11676 25.9453 8.26355 25.9453H18.5099C22.6567 25.9453 26.0193 22.5833 26.0193 18.4366V8.1894ZM23.5539 18.3236C23.5539 21.1717 21.2451 23.4805 18.397 23.4805H8.37646C5.52838 23.4805 3.21967 21.1717 3.21967 18.3236V8.30237C3.21967 5.45425 5.52838 3.14549 8.37646 3.14549H18.397C21.2451 3.14549 23.5539 5.45425 23.5539 8.30237V18.3236Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-6 md:col-span-2">
+                <nav class="flex flex-col">
+                    <h6 class="text-xl font-semibold mb-3">Company</h6>
+                    <a class="link link-hover text-light mb-2">About us</a>
+                    <a class="link link-hover text-light mb-2">Our offerings</a>
+                    <a class="link link-hover text-light mb-2"> Newsroom</a>
+                    <a class="link link-hover text-light mb-2">Investors</a>
+                    <a class="link link-hover text-light mb-2">Blog</a>
+                    <a class="link link-hover text-light mb-2">Careers</a>
+                    <a class="link link-hover text-light mb-2">AI</a>
+                    <a class="link link-hover text-light mb-2">Gift cards</a>
+                </nav>
+            </div>
+            <div class="col-span-6 md:col-span-2">
+                <nav class="flex flex-col">
+                    <h6 class="text-xl font-semibold mb-3">Products</h6>
+                    <a class="link link-hover text-light mb-2">Ride</a>
+                    <a class="link link-hover text-light mb-2">Drive</a>
+                    <a class="link link-hover text-light mb-2">Virtue for Business</a>
+                    <a class="link link-hover text-light mb-2">Virtue Freight</a>
+                </nav>
+            </div>
+            <div class="col-span-6 md:col-span-2">
+                <nav class="flex flex-col">
+                    <h6 class="text-xl font-semibold mb-3">Global citizenship</h6>
+                    <a class="link link-hover text-light mb-2">Safety</a>
+                    <a class="link link-hover text-light mb-2">Diversity and Inclusion</a>
+                </nav>
+            </div>
+            <div class="col-span-6 md:col-span-2">
+                <nav class="flex flex-col">
+                    <h6 class="text-xl font-semibold mb-3">Travel</h6>
+                    <a class="link link-hover text-light mb-2">Airports</a>
+                    <a class="link link-hover text-light mb-2">Cities</a>
+                </nav>
+            </div>
+            <div class="col-span-12 py-10">
+                <img src="./dist/images/playstore.png" alt="playstore">
+            </div>
+            <div class="col-span-12 w-full">
+                <p class="text-center">Copyright © 2024 - All right reserved by VIRTUE Industries Ltd</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- JS Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
