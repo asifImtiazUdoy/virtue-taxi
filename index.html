@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taxi | Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="dist/style.css">
 </head>
 
@@ -173,7 +174,7 @@
                 </div>
                 <div class="col-span-4">
                     <div class="text-secondary mb-3">
-                        <img src="/dist/icon/message-icon.png" alt="icon" width="30">
+                        <img src="./dist/icon/message-icon.png" alt="icon" width="30">
                     </div>
                     <h3 class="text-xl mb-6">Help if you need it</h3>
                     <p>
@@ -183,7 +184,7 @@
                 </div>
                 <div class="col-span-4">
                     <div class="text-secondary mb-3">
-                        <img src="/dist/icon/teamwork-icon.png" alt="icon" width="30">
+                        <img src="./dist/icon/teamwork-icon.png" alt="icon" width="30">
                     </div>
                     <h3 class="text-xl mb-6">An inclusive community</h3>
                     <p>
@@ -213,6 +214,93 @@
                 <div class="col-span-4">
                     <div class="mx-auto bg-light w-2/3 aspect-square rounded-full"></div>
                     <p class="text-center text-2xl font-semibold py-5">Name</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container">
+            <div class="flex justify-center">
+                <h2 class="text-3xl font-semibold mb-10">Cities</h2>
+            </div>
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                                <img src="./dist/images/cities_1.png" alt="cities" class="rounded-xl w-full" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Lorem ipsum</h2>
+                                <p class="mb-10">Lorem ipsum dolor sit amet, conseur
+                                    adipiscing elit, sed do eiusmod tempor incid
+                                    ut labore et dolore deserunt mollit anim.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                                <img src="./dist/images/cities_2.png" alt="cities" class="rounded-xl w-full" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Lorem ipsum</h2>
+                                <p class="mb-10">Lorem ipsum dolor sit amet, conseur
+                                    adipiscing elit, sed do eiusmod tempor incid
+                                    ut labore et dolore deserunt mollit anim.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                                <img src="./dist/images/cities_3.png" alt="cities" class="rounded-xl w-full" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Lorem ipsum</h2>
+                                <p class="mb-10">Lorem ipsum dolor sit amet, conseur
+                                    adipiscing elit, sed do eiusmod tempor incid
+                                    ut labore et dolore deserunt mollit anim.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                                <img src="./dist/images/cities_3.png" alt="cities" class="rounded-xl w-full" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Lorem ipsum</h2>
+                                <p class="mb-10">Lorem ipsum dolor sit amet, conseur
+                                    adipiscing elit, sed do eiusmod tempor incid
+                                    ut labore et dolore deserunt mollit anim.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="flex justify-center items-center py-5">
+                    <div class="button-prev p-3 rounded-full bg-light">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </div>
+                    <div class="pagination w-auto px-2"></div>
+                    <div class="button-next p-3 rounded-full bg-light">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
@@ -259,6 +347,11 @@
             </div>
         </div>
     </section>
+
+
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/dist/script.js"></script>
 </body>
 
 </html>
